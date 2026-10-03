@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bachman Consulting LLC</title>
+<meta name="description" content="Business consulting, manager training, and software for shooters and businesses.">
+<meta property="og:title" content="Bachman Consulting LLC">
+<meta property="og:description" content="Business consulting, manager training, and software for shooters and businesses.">
+<meta name="theme-color" content="#12160F">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2340592B'/%3E%3Ctext x='32' y='43' font-family='Arial Narrow,Arial,sans-serif' font-weight='700' font-size='30' fill='%23ECEEE5' text-anchor='middle'%3EBC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+  /* Layout: a plain company card. Name and one-line summary up top, three services, contact at the foot. */
+  :root {
+    --ground: #12160F; --card: #1A2016; --line: #343C2C;
+    --ink: #E5E9DC; --muted: #9BA48F; --olive: #9FBF7A; --brass: #E2B35C;
+    --display: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
+    --body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink); font-family: var(--body);
+    line-height: 1.5; padding-inline: 20px;
+    padding-block: max(56px, env(safe-area-inset-top)) max(40px, env(safe-area-inset-bottom));
+  }
+  .wrap { max-width: 880px; margin: 0 auto; display: grid; gap: 44px; }
+  header { display: grid; gap: 14px; }
+  .mark {
+    width: 52px; height: 52px; border-radius: 12px; background: #40592B; color: #ECEEE5;
+    display: grid; place-items: center; font-family: var(--display); font-weight: 700; font-size: 1.5rem; letter-spacing: .02em;
+  }
+  h1 {
+    margin: 0; font-family: var(--display); font-weight: 700; text-transform: uppercase;
+    font-size: clamp(2.4rem, 8vw, 4rem); line-height: .95; letter-spacing: .03em; text-wrap: balance;
+  }
+  .summary { margin: 0; font-size: clamp(1.1rem, 3.4vw, 1.35rem); color: var(--ink); max-width: 40ch; }
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .service { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+  .service h2 {
+    margin: 0; font-family: var(--display); font-weight: 700; text-transform: uppercase;
+    letter-spacing: .08em; font-size: 1.15rem; color: var(--olive);
+  }
+  .service p { margin: 0; color: var(--muted); }
+  .product {
+    margin-top: 6px; display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink);
+    border-top: 1px solid var(--line); padding-top: 14px;
+  }
+  .product img { width: 40px; height: 40px; border-radius: 9px; flex: none; }
+  .product b { display: block; font-weight: 600; }
+  .product span { color: var(--brass); font-family: var(--display); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; font-size: .8rem; }
+  .product:hover b, .product:focus-visible b { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--brass); outline-offset: 4px; border-radius: 4px; }
+  footer { border-top: 1px solid var(--line); padding-top: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; color: var(--muted); font-size: .92rem; }
+  footer a { color: var(--ink); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark" aria-hidden="true">BC</div>
+      <h1>Bachman Consulting LLC</h1>
+      <p class="summary">Business consulting, manager training, and software for shooters and businesses.</p>
+    </header>
+
+    <section class="services" aria-label="What we do">
+      <div class="service">
+        <h2>Business consulting</h2>
+        <p>Helping owners run tighter, more profitable operations.</p>
+      </div>
+      <div class="service">
+        <h2>Manager training</h2>
+        <p>Building leaders who can run the shift without you.</p>
+      </div>
+      <div class="service">
+        <h2>Software</h2>
+        <p>Practical tools built by someone who uses them.</p>
+        <a class="product" href="https://rifledopebook.com">
+          <img src="rifle-dope-book-icon.png" alt="">
+          <div><b>Rifle Dope Book</b><span>Coming soon</span></div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div>Contact: <a href="mailto:kevin@bachmanconsultingllc.com">kevin@bachmanconsultingllc.com</a></div>
+      <div>© 2026 Bachman Consulting LLC</div>
+    </footer>
+  </div>
+</body>
+</html>
